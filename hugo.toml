@@ -1,4 +1,4 @@
-baseURL = "https://www.swiftenroll.com/"
+baseURL = "https://swiftenroll.github.io/website/"
 title = "SwiftEnroll"
 
 # Theme Config
@@ -13,11 +13,6 @@ enableGitInfo = true
     [caches.images]
         dir = ":cacheDir/images"
         maxAge = "8760h"  # 1 year
-
-# Enable taxonomies
-[taxonomies]
-  category = 'categories'
-  tag = 'tags'
 
 # Pagination
 paginate = 6
