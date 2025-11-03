@@ -12,7 +12,7 @@ hero:
     gradient_to: "to-white"
 client_logos:
   - name: "Customer 1"
-    logo: "/images/logos/customer-1.png"
+    logo: "/images/logos/lsa.png"
 industry_features:
   headlines:
     - "Fair, Transparent Lottery Enrollment"

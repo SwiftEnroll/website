@@ -43,7 +43,7 @@ node_modules/
 
 # Hugo specific
 # "public" is the default Hugo publishDir (generated site)
- public/
+public/
 # Hugo generated resources
- resources/
- .hugo_build.lock
+resources/
+.hugo_build.lock

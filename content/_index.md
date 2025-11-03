@@ -2,7 +2,7 @@
 title: Home
 client_logos:
   - name: "Customer 1"
-    logo: "/images/logos/customer-1.png"
+    logo: "/images/logos/lsa.png"
 testimonials:
   - name: "Sarah"
     title: "Parent"

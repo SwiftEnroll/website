@@ -2,7 +2,6 @@ baseURL = "https://www.swiftenroll.com/"
 title = "SwiftEnroll"
 
 # Theme Config
-theme = "hugo-saasify-theme"
 
 # Enable emoji support
 enableEmoji = true
