@@ -9,6 +9,11 @@ enableEmoji = true
 # Enable Git info for lastmod
 enableGitInfo = true
 
+[caches]
+    [caches.images]
+        dir = ":cacheDir/images"
+        maxAge = "8760h"  # 1 year
+
 # Enable taxonomies
 [taxonomies]
   category = 'categories'
