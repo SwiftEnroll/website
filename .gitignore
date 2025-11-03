@@ -1,0 +1,40 @@
+# -----------------------------
+# Global
+# -----------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+*.temp
+*.orig
+
+# Editor/IDE
+.vscode/
+.idea/
+*.iml
+
+# Env files (do not commit secrets)
+.env
+.env.*
+!.env.example
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Coverage / reports
+coverage/
+
+# Caches & temp
+.cache/
+.tmp/
+.sass-cache/
+.hugo_cache/
+
+# Node.js
+node_modules/
