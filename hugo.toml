@@ -1,7 +1,5 @@
-baseURL = "https://swiftenroll.github.io/website/"
 title = "SwiftEnroll"
-
-# Theme Config
+baseURL = "https://swiftenroll.github.io/website/"
 
 # Enable emoji support
 enableEmoji = true
@@ -13,10 +11,6 @@ enableGitInfo = true
     [caches.images]
         dir = ":cacheDir/images"
         maxAge = "8760h"  # 1 year
-
-# Pagination
-paginate = 6
-paginatePath = "page"
 
 [params]
   description = "SwiftEnroll simplifies enrollment, waitlists, approvals, and payments for camps, after-school programs, and youth organizations."
