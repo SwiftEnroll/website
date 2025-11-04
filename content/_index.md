@@ -26,7 +26,7 @@ testimonials:
     headline="Automate Enrollment, Payments, and Scheduling"
     sub_headline="SwiftEnroll helps programs open registration, manage waitlists and approvals, and collect payments while giving families a fast, stress‑free sign‑up experience."
     primary_button_text="Book a Demo"
-    primary_button_url="/demo"
+    primary_button_url="/demo-request/"
     secondary_button_text="Contact Us"
     secondary_button_url="/contact"
     hero_image="/images/hero-dashboard.svg"

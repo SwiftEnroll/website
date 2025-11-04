@@ -1,0 +1,71 @@
+<div class="bg-white border border-gray-200/80 rounded-2xl p-6 md:p-8 shadow-sm mt-8">
+  <div class="mb-4">
+    <h3 class="text-xl font-semibold text-gray-900">See SwiftEnroll in action</h3>
+    <p class="text-sm text-gray-600">Request a quick walkthrough tailored to your programs.</p>
+  </div>
+
+  <div id="demo-inline-success" class="hidden p-4 rounded-lg bg-green-50 border border-green-200 text-green-800 mb-4">
+    Thanks! We received your request. We’ll reach out shortly.
+  </div>
+
+  <form id="demo-inline-form" class="mt-2 grid grid-cols-1 md:grid-cols-5 gap-3 items-center" action="https://submit-form.com/InyGZDbvs" method="POST">
+    <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" />
+    <input type="hidden" name="_redirect" id="demo_inline_redirect" value="" />
+    <div class="md:col-span-2">
+      <label class="sr-only" for="inline_name">Your name</label>
+      <input required class="w-full h-12 rounded-full border border-gray-300 px-5 text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-600 focus:border-transparent transition" type="text" id="inline_name" name="name" placeholder="Your name" />
+    </div>
+    <div class="md:col-span-2">
+      <label class="sr-only" for="inline_email">Work email</label>
+      <input required class="w-full h-12 rounded-full border border-gray-300 px-5 text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-600 focus:border-transparent transition" type="email" id="inline_email" name="email" placeholder="Work email" />
+    </div>
+    <div class="md:col-span-1">
+      <button type="submit" class="w-full h-12 inline-flex items-center justify-center px-5 rounded-full font-semibold bg-primary-600 text-white hover:bg-primary-700 transition-colors">Request Demo</button>
+    </div>
+  </form>
+
+  <script>
+    (function(){
+      var form = document.getElementById('demo-inline-form');
+      var success = document.getElementById('demo-inline-success');
+      if (!form) return;
+
+      // Show success if redirected back with ?submitted=1
+      try {
+        var params = new URLSearchParams(window.location.search);
+        if (params.get('submitted') === '1' && success) {
+          form.classList.add('hidden');
+          success.classList.remove('hidden');
+        }
+      } catch (e) {}
+
+      function makeRedirectUrl() {
+        var base = window.location.pathname;
+        return base + (base.indexOf('?') === -1 ? '?submitted=1' : '&submitted=1');
+      }
+
+      form.addEventListener('submit', function(e){
+        e.preventDefault();
+        var submitBtn = form.querySelector('button[type="submit"]');
+        if (submitBtn) { submitBtn.disabled = true; submitBtn.classList.add('opacity-75','cursor-not-allowed'); }
+        var redirectField = form.querySelector('#demo_inline_redirect');
+        if (redirectField) redirectField.value = makeRedirectUrl();
+
+        var data = new FormData(form);
+        fetch(form.action, { method: 'POST', mode: 'cors', body: data, headers: { 'Accept': 'application/json' } })
+          .then(function(res){
+            if (res.ok) {
+              form.classList.add('hidden');
+              if (success) success.classList.remove('hidden');
+            } else {
+              // Fall back to native submit to let Formspark redirect
+              form.submit();
+            }
+          })
+          .catch(function(){
+            form.submit();
+          });
+      });
+    })();
+  </script>
+</div>

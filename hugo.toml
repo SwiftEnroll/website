@@ -71,7 +71,7 @@ enableGitInfo = true
     gradient_angle = 30
     [params.cta.primary_button]
       text = "Book a Demo"
-      url = "/demo"
+      url = "/demo-request/"
     [params.cta.secondary_button]
       text = "Contact Us"
       url = "/contact"
@@ -118,7 +118,7 @@ enableGitInfo = true
       # Get Started button
       [params.header.buttons.getStarted]
         text = "Get Started"
-        url = "/get-started"
+        url = "/demo-request/"
   
   # Centralized copy
   [params.text]
