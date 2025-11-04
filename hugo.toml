@@ -123,8 +123,8 @@ enableGitInfo = true
   # Centralized copy
   [params.text]
     trustedByCompanies = "Proudly Supporting Community Enrichment Programs"
-    testimonialsTitle = "What Parents Are Saying"
-    testimonialsDescription = "Real feedback from families who used SwiftEnroll for program sign‑ups."
+    testimonialsTitle = "What Users Are Saying"
+    testimonialsDescription = "Real user feedback from parents and administrators."
     seeItInAction = "See it in action"
     perMonth = "/mo"
 

@@ -76,9 +76,7 @@ testimonials:
 
 {{< /features-section >}}
 
-{{< testimonials 
-    title="What Parents Are Saying"
-    description="Real feedback from families who used SwiftEnroll"
+{{< testimonials
     animate="true"
     background-color="#f1f5f9"
 >}}
