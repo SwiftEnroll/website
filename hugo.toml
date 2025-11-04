@@ -1,5 +1,5 @@
 title = "SwiftEnroll"
-baseURL = "https://swiftenroll.github.io/website/"
+baseURL = "https://swiftenroll.github.io/"
 
 # Enable emoji support
 enableEmoji = true
