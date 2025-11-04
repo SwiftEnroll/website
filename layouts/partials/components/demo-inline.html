@@ -9,8 +9,7 @@
   </div>
 
   <form id="demo-inline-form" class="mt-2 grid grid-cols-1 md:grid-cols-5 gap-3 items-center" action="https://submit-form.com/InyGZDbvs" method="POST">
-    <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" />
-    <input type="hidden" name="_redirect" id="demo_inline_redirect" value="" />
+    <input type="hidden" name="_redirect" id="demo_inline_redirect" value="{{ .Permalink }}?submitted=1" />
     <div class="md:col-span-2">
       <label class="sr-only" for="inline_name">Your name</label>
       <input required class="w-full h-12 rounded-full border border-gray-300 px-5 text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-600 focus:border-transparent transition" type="text" id="inline_name" name="name" placeholder="Your name" />
@@ -30,7 +29,7 @@
       var success = document.getElementById('demo-inline-success');
       if (!form) return;
 
-      // Show success if redirected back with ?submitted=1
+      // After native Formspark redirect back with ?submitted=1, show success and hide the form
       try {
         var params = new URLSearchParams(window.location.search);
         if (params.get('submitted') === '1' && success) {
@@ -38,34 +37,7 @@
           success.classList.remove('hidden');
         }
       } catch (e) {}
-
-      function makeRedirectUrl() {
-        var base = window.location.pathname;
-        return base + (base.indexOf('?') === -1 ? '?submitted=1' : '&submitted=1');
-      }
-
-      form.addEventListener('submit', function(e){
-        e.preventDefault();
-        var submitBtn = form.querySelector('button[type="submit"]');
-        if (submitBtn) { submitBtn.disabled = true; submitBtn.classList.add('opacity-75','cursor-not-allowed'); }
-        var redirectField = form.querySelector('#demo_inline_redirect');
-        if (redirectField) redirectField.value = makeRedirectUrl();
-
-        var data = new FormData(form);
-        fetch(form.action, { method: 'POST', mode: 'cors', body: data, headers: { 'Accept': 'application/json' } })
-          .then(function(res){
-            if (res.ok) {
-              form.classList.add('hidden');
-              if (success) success.classList.remove('hidden');
-            } else {
-              // Fall back to native submit to let Formspark redirect
-              form.submit();
-            }
-          })
-          .catch(function(){
-            form.submit();
-          });
-      });
+      // No custom submission logic: rely on native form submit + Formspark _redirect
     })();
   </script>
 </div>
