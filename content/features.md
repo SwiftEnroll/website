@@ -2,9 +2,6 @@
 title: "Features"
 description: "Everything you need to run enrollment, waitlists and approvals, payments, and admin reporting built for programs and schools."
 layout: "feature"
-demo:
-  description: "See how SwiftEnroll streamlines registration and payments."
-  image: "/images/hero-dashboard.svg"
 ---
 
 {{< features-section title="Enrollment Experience" description="Parent‑friendly checkout with the controls programs need." columns="2" >}}
