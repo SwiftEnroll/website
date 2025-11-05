@@ -183,7 +183,6 @@
       "md:grid-cols-4",
       "md:grid-cols-5",
       "md:hidden",
-      "md:overflow-hidden",
       "md:p-8",
       "md:pb-28",
       "md:pt-24",

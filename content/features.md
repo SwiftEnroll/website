@@ -1,46 +1,46 @@
 ---
 title: "Features"
-description: "Everything you need to run enrollment, waitlists and approvals, payments, and admin reporting built for programs and schools."
+description: "Everything you need to run enrollment.<br/>Waitlists and approvals, payments, and admin reporting built for programs and schools."
 layout: "feature"
 ---
 
-{{< features-section title="Enrollment Experience" description="Parent‑friendly checkout with the controls programs need." columns="2" >}}
+{{< features-section title="Enrollment Experience" description="Parent friendly lottery with the controls programs need." columns="2" >}}
 
 {{< feature
     icon="zap"
-    title="Fast, Parent‑Friendly Checkout"
-    description="Delight families with a streamlined, mobile‑ready registration flow."
-    features="Age/grade filters,Capacity limits,Terms & multi‑week sessions"
+    title="Fast, Parent‑Friendly Enrollment"
+    description="Delight families with a fully-featured registration flow."
+    features="Ranked-choice lottery preferences, Multi-student & household enrollment,Apple & Google Calendar Syncing"
 />}}
 
 {{< feature
     icon="users"
     title="Households & Students"
-    description="Keep family data organized and ready for rosters and communications."
-    features="Household accounts,Student profiles,Consents & waivers"
+    description="Keep data up to date, organized, and ready for next time."
+    features="Household account sharing,Student/customer profiles,Consents & waivers"
 />}}
 
 {{< /features-section >}}
 
-{{< features-section title="Waitlists & Approvals" description="Transparent queues with optional lotteries and automated approvals." columns="2" id="waitlists-and-lottery" >}}
+{{< features-section title="Waitlists & Lottery" description="Lottery algorithm with automated approvals and waitlist management." columns="2" id="waitlists-and-lottery" >}}
 
 {{< feature
     icon="clock"
     title="Waitlists & Lottery"
-    description="First‑come or lottery-based enrollment with clear timestamps."
-    features="Transparent queues,Auto‑approvals,Family notifications"
+    description="Lottery based enrollment with automated waitlist."
+    features="Fair lottery algorithm with ranked choices,Automated waitlist approvals,Status notifications and communications"
 />}}
 
 {{< feature
     icon="target"
-    title="Smart Rules"
+    title="Managed Enrollment Rules"
     description="Ensure the right students get into the right classes."
-    features="Per‑class limits,Eligibility checks,Approval flows"
+    features="Per‑class capacity limits,Eligibility restriction checks,Management tools for overrides"
 />}}
 
 {{< /features-section >}}
 
-{{< features-section title="Payments & Billing (Stripe)" description="Secure, flexible billing powered by Stripe." columns="2" id="payments-and-billing" >}}
+{{< features-section title="Payments & Billing" description="Secure, flexible payment options powered by Stripe." columns="2" id="payments-and-billing" >}}
 
 {{< feature
     icon="dollar"
@@ -52,26 +52,26 @@ layout: "feature"
 {{< feature
     icon="chart"
     title="Invoices & Reconciliation"
-    description="Keep finance happy with clean records and exports."
-    features="PDF invoices,CSV exports,Ledger‑friendly data"
+    description="Clean records and exports for parents and administrators."
+    features="Invoicing & payment receipts,Automated payment reminders,Enrollment payment reporting & statistics"
 />}}
 
 {{< /features-section >}}
 
-{{< features-section title="Scheduling & Rosters" description="Keep classes organized from schedule to attendance." columns="2" id="scheduling-and-rosters" >}}
+{{< features-section title="Scheduling & Rosters" description="Keep classes organized from planning the schedule to tracking attendance." columns="2" id="scheduling-and-rosters" >}}
 
 {{< feature
     icon="analytics"
     title="Classes & Schedules"
-    description="Set up terms, times, and locations—once—then reuse."
-    features="Multi‑week terms,Locations,Per‑session capacity"
+    description="Set up terms, times, and locations - once - then reuse."
+    features="Flexible configuration to fit your program,Recurring schedule management,Schedule overrides and cancellations"
 />}}
 
 {{< feature
     icon="check"
     title="Roster Management"
     description="Everything instructors need to run class."
-    features="Attendance tracking,Instructor assignment,Quick exports"
+    features="Attendance reports & class lists,Enrollment management tools,Instructor access controls"
 />}}
 
 {{< /features-section >}}
@@ -82,14 +82,14 @@ layout: "feature"
     icon="chart"
     title="Dashboards & Exports"
     description="Understand enrollments and payments at a glance."
-    features="Real‑time metrics,Trend analysis,One‑click exports"
+    features="Real‑time metrics dashboards,Google Sheets report exports,Enrollment & payment summaries"
 />}}
 
 {{< feature
     icon="lock"
     title="Roles & Permissions"
-    description="Granular access for staff and volunteers."
-    features="Role‑based access,Audit‑friendly,Least‑privilege defaults"
+    description="Granular access for different staff members."
+    features="Role‑based access control,Customized access for different users,Least‑privilege admin defaults"
 />}}
 
 {{< /features-section >}}
@@ -100,7 +100,14 @@ layout: "feature"
     icon="users"
     title="Automated Emails"
     description="Approvals, reminders, and receipts without busywork."
-    features="Templates with merge fields,Delivery tracking,Announcements"
+    features="Enrollment confirmations,Approval & waitlist notifications,Payment receipts & reminders"
+/>}}
+
+{{< feature
+    icon="chat"
+    title="Notifications & Alerts"
+    description="Stay on top of important events and deadlines."
+    features="Notifications on cancellations & schedule changes,Alerts for low enrollment or payment issues,Customizable message templates and branding"
 />}}
 
 {{< /features-section >}}
@@ -109,16 +116,16 @@ layout: "feature"
 
 {{< feature
     icon="dollar"
-    title="Stripe‑Native"
-    description="Industry‑leading security and reliability for payments."
-    features="Cards & ACH,Wallets,Disputes in Stripe"
+    title="Stripe Native Payments"
+    description="Secure, reliable payments powered by Stripe."
+    features="Stripe connected accounts integration,PCI-compliant payment processing,Support for all major payment methods"
 />}}
 
 {{< feature
     icon="roi"
-    title="Exports & Roadmap"
-    description="Get data out easily; more integrations on the way."
-    features="CSV exports,Planned: SSO/SAML,Planned: SIS connectors"
+    title="Exports & Advanced"
+    description="Integrate with your existing systems and workflows."
+    features="Google workspaces integration,SSO/SAML for Enterprise,Custom integrations (SIS/CRM/etc)"
 />}}
 
 {{< /features-section >}}
@@ -126,7 +133,7 @@ layout: "feature"
 {{< benefits-grid columns="3" >}}
 {
   "items": [
-    {"icon": "clock",  "title": "Save Time",   "description": "Automate repetitive work and reduce admin overhead."},
+    {"icon": "clock",  "title": "Save Time",   "description": "Automate repetitive work and reduce administrative overhead."},
     {"icon": "dollar", "title": "Reduce Costs", "description": "Consolidate tools and cut payment processing hassles."},
     {"icon": "users",  "title": "Scale Easily", "description": "Grow programs without adding back‑office burden."}
   ]
